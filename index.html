@@ -67,13 +67,21 @@
 
 <!-- PLANOS -->
 <section id="planos" class="py-24 px-6 bg-[#ffffff]">
-  <h2 class="text-4xl font-extrabold text-center text-[#c0392b] mb-16">Planos inteligentes</h2>
+  <h2 class="text-4xl font-extrabold text-center text-[#c0392b] mb-4">Planos inteligentes</h2>
+  <p class="text-center text-[#1f3d33]/70 mb-16">
+    Valores mensais • Contrato mínimo de 3 meses
+  </p>
 
   <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
 
-    <div onclick="enviarWhats('Plano Essencial - R$650')" class="cursor-pointer bg-[#c0392b] text-white p-8 rounded-3xl transform transition hover:-translate-y-4 hover:shadow-2xl">
+    <!-- ESSENCIAL -->
+    <div onclick="enviarWhats('Plano Essencial - R$650/mês (mínimo 3 meses)')" 
+      class="cursor-pointer bg-[#c0392b] text-white p-8 rounded-3xl transform transition hover:-translate-y-4 hover:shadow-2xl">
+      
       <h3 class="text-xl font-bold">Essencial</h3>
-      <p class="text-4xl font-black my-4">R$650</p>
+      <p class="text-4xl font-black my-2">R$650<span class="text-lg font-semibold">/mês</span></p>
+      <p class="text-sm text-white/80 mb-4">Contrato mínimo de 3 meses</p>
+
       <ul class="space-y-2 text-white/90">
         <li>4 postagens mensais</li>
         <li>Respostas a comentários</li>
@@ -82,42 +90,41 @@
       </ul>
     </div>
 
-    <div onclick="enviarWhats('Plano Profissional - R$950')" class="cursor-pointer bg-[#2f5d50] text-white p-8 rounded-3xl transform transition hover:-translate-y-6 hover:scale-105 hover:shadow-2xl">
-      <span class="text-sm">Mais escolhido</span>
+    <!-- PROFISSIONAL -->
+    <div onclick="enviarWhats('Plano Profissional - R$950/mês (mínimo 3 meses)')" 
+      class="cursor-pointer bg-[#2f5d50] text-white p-8 rounded-3xl transform transition hover:-translate-y-6 hover:scale-105 hover:shadow-2xl">
+      
+      <span class="text-sm opacity-80">Mais escolhido</span>
       <h3 class="text-xl font-bold mt-2">Profissional</h3>
-      <p class="text-4xl font-black my-4">R$950</p>
+      <p class="text-4xl font-black my-2">R$950<span class="text-lg font-semibold">/mês</span></p>
+      <p class="text-sm text-white/80 mb-4">Contrato mínimo de 3 meses</p>
+
       <ul class="space-y-2 text-white/90">
         <li>8 postagens mensais</li>
         <li>Respostas personalizadas</li>
         <li>Otimização contínua</li>
-        <li>Relatório quinzenal</li>
+        <li>Relatório mensal</li>
       </ul>
     </div>
 
-    <div onclick="enviarWhats('Plano Premium - R$1.350')" class="cursor-pointer bg-[#c0392b] text-white p-8 rounded-3xl transform transition hover:-translate-y-4 hover:shadow-2xl">
+    <!-- PREMIUM -->
+    <div onclick="enviarWhats('Plano Premium - R$1.350/mês (mínimo 3 meses)')" 
+      class="cursor-pointer bg-[#c0392b] text-white p-8 rounded-3xl transform transition hover:-translate-y-4 hover:shadow-2xl">
+      
       <h3 class="text-xl font-bold">Premium</h3>
-      <p class="text-4xl font-black my-4">R$1.350</p>
+      <p class="text-4xl font-black my-2">R$1.350<span class="text-lg font-semibold">/mês</span></p>
+      <p class="text-sm text-white/80 mb-4">Contrato mínimo de 3 meses</p>
+
       <ul class="space-y-2 text-white/90">
         <li>16 postagens mensais</li>
         <li>Gestão estratégica</li>
         <li>Produtos e ofertas</li>
-        <li>Relatório semanal</li>
+        <li>Relatório mensal</li>
       </ul>
     </div>
 
   </div>
 </section>
-
-<footer class="py-10 text-center bg-[#2f5d50] text-white">
-  <p>(48) 98406-5039 • João Paulo</p>
-</footer>
-
-<script>
-  function enviarWhats(plano) {
-    const mensagem = `Olá! Tenho interesse no ${plano}.`;
-    window.open(`https://wa.me/5548984065039?text=${encodeURIComponent(mensagem)}`, '_blank');
-  }
-</script>
 
 </body>
 </html>
